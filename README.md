@@ -61,4 +61,4 @@ parsermodelArray 返回出RACTuple的对象 2个元素 1.modelArray对象的数�
             }] doCompleted:^{
                 [MBProgressHUD hideHUD];
             }];
-#### 二.对于MVVM 的demo 我看了很多 这个因为写的有点随意 BaseVM BaseView  BaseVC    我最近看到[http://www.jianshu.com/p/3beb21d5def2](http://www.jianshu.com/p/3beb21d5def2)写的还不错
+#### 二.对于MVVM 的demo 我看了很多 这个因为写的有点随意 没有提出 BaseVM BaseView  BaseVC    我最近看到[http://www.jianshu.com/p/3beb21d5def2](http://www.jianshu.com/p/3beb21d5def2)写的还不错
