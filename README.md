@@ -61,4 +61,147 @@ parsermodelArray 返回出RACTuple的对象 2个元素 1.modelArray对象的数�
             }] doCompleted:^{
                 [MBProgressHUD hideHUD];
             }];
-#### 二.对于MVVM 的demo 我看了很多 这个因为写的有点随意 没有提出 BaseVM BaseView  BaseVC    我最近看到[http://www.jianshu.com/p/3beb21d5def2](http://www.jianshu.com/p/3beb21d5def2)写的还不错
+#### 二.对于MVVM 的demo 我看了很多 这个因为写的有点随意 没有提出 BaseVM BaseView  BaseVC 
+
+但是在对于事件的处理 和逻辑 都在VM里面实现   我在纠结如果每个简单的VC也要去创建一个View  去处理界面有没有必要 
+ 这里我以 登陆举例 MVVM
+  VC的代码
+		
+		
+		// 监测输入框的变化
+		   RAC(self.loginViewModel,userName) = _useNameTextField.rac_textSignal;
+		   RAC(self.loginViewModel,password) =      _passwordTextField.rac_textSignal;
+		   
+    //处理输出框变化
+    [self.loginViewModel.loginEnableSignal subscribeNext:^(NSNumber *x) {
+        if ([x boolValue]) {
+         
+            _loginButton.backgroundColor = [UIColor colorFromHexCode:@"47c3ca"];
+        }else{
+           
+           _loginButton.backgroundColor = [UIColor colorFromHexCode:@"e9e9e9"];
+        }
+    }];
+    RAC(self.loginButton,enabled) = self.loginViewModel.loginEnableSignal;
+    @weakify(self)
+    // 按钮的事件处理
+    [[_loginButton rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(id x) {
+        @strongify(self)
+       [self.loginViewModel.loginCommand execute:nil];
+    }];
+    
+    
+    // 登陆成功
+    [[self.loginViewModel.loginSuccessSignal takeUntil:self.rac_willDeallocSignal] subscribeNext:^(id x) {
+        if ([x isEqualToNumber:@(YES)]) {
+            UIViewController *vc = [[UIViewController alloc] init];
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+    }];
+    
+    
+    
+    
+    
+    
+   VM的代码
+		
+		- (instancetype)init
+		{
+		    self = [super init];
+		    if (self) {
+		        
+		        [self bindEvent];
+		       
+		    }
+		    return self;
+		}
+		- (void)bindEvent
+		{
+		    // 事件返回
+		    
+		    [self.loginCommand.executionSignals.switchToLatest subscribeNext:^(id x) {
+		        
+		        if ([x isKindOfClass:[UserDetail class]]) {
+		            [WKUserManager shareManger].userDetail =  x;
+		            NSLog(@"%@",x);
+		            [self.loginSuccessSignal sendNext:@(YES)];
+		        }else{
+		            [self.loginSuccessSignal sendNext:@(NO)];
+		            NSError *error = (NSError *)x;
+		            //MBProgressHUD 内部有个BUG MBProgressHUD show  之前先将之前SHOW的先DISSMISS
+		            //[MBProgressHUD showError:error.domain];
+		        }
+		        
+		        
+		        
+		
+		    }];
+		    
+		    // 监测事件的整个过程
+		    [[[self.loginCommand executing] skip:1] subscribeNext:^(id x) {
+		        if ([x isEqualToNumber:@(YES)]) {
+		        
+		            [MBProgressHUD showMessage:@"正在登录..."];
+		            
+		            
+		        }else
+		        {
+		            [MBProgressHUD hideHUD];
+		        }
+		    }];
+		
+		}
+		
+		- (RACSignal *)loginEnableSignal{
+		
+		    if (!_loginEnableSignal)
+		    {
+		        _loginEnableSignal = [RACSignal combineLatest:@[RACObserve(self, userName),RACObserve(self, password)] reduce:^id(NSString * userName,NSString * password){
+		            
+		            return @(userName.length && password.length) ;
+		            
+		        }];
+		    }
+		    return _loginEnableSignal;
+		}
+		
+		
+		
+		- (RACCommand *)loginCommand
+		{
+		    if (!_loginCommand) {
+		       
+		        _loginCommand = [[RACCommand alloc] initWithSignalBlock:^RACSignal *(id input) {
+		        
+		        NSMutableDictionary *params = [NSMutableDictionary dictionary];
+		        
+		            // 请求  解析
+		        return [[WKNetwork POST:kAPIURLUserLogin parameters:params] parsermodelClass:[UserDetail class]];
+		            /*
+		          RACSignal *signal = [WKNetwork POST:kAPIURLUserLogin parameters:params];//请求
+		          RACSignal *parserSignal =  [signal parsermodelClass:[UserDetail class]];//解析
+		             */
+		    
+		    }];
+		    }
+		    return _loginCommand;
+		}
+		
+		- (RACSubject *)loginSuccessSignal
+		{
+		    if (!_loginSuccessSignal)
+		    {
+		        _loginSuccessSignal = [RACSubject subject];
+		        
+		    }
+		    return _loginSuccessSignal;
+		}
+		   
+
+
+我最近看到[http://www.jianshu.com/p/3beb21d5def2](http://www.jianshu.com/p/3beb21d5def2)写的还不错
+
+
+
+
