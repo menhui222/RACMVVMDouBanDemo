@@ -1,0 +1,947 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A97859D14BB2D09F021FFA0A /* Pods_RACDouBanMovie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DDEFD7991BBEA4C96AC03E2 /* Pods_RACDouBanMovie.framework */; };
+		E17BABBC1D124681001C1B36 /* WKBookViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E17BABBB1D124681001C1B36 /* WKBookViewModel.m */; };
+		E17BABC01D1246F6001C1B36 /* WKMyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E17BABBE1D1246F6001C1B36 /* WKMyViewController.m */; };
+		E17BABC11D1246F6001C1B36 /* WKMyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E17BABBF1D1246F6001C1B36 /* WKMyViewController.xib */; };
+		E17BABC51D12470F001C1B36 /* WKMoiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E17BABC31D12470F001C1B36 /* WKMoiveViewController.m */; };
+		E17BABC61D12470F001C1B36 /* WKMoiveViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E17BABC41D12470F001C1B36 /* WKMoiveViewController.xib */; };
+		E17BABCA1D124728001C1B36 /* WKMusicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E17BABC81D124728001C1B36 /* WKMusicViewController.m */; };
+		E17BABCB1D124728001C1B36 /* WKMusicViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E17BABC91D124728001C1B36 /* WKMusicViewController.xib */; };
+		E17BABCF1D128252001C1B36 /* Book.m in Sources */ = {isa = PBXBuildFile; fileRef = E17BABCE1D128252001C1B36 /* Book.m */; };
+		E17BABD31D12934E001C1B36 /* WKBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E17BABD11D12934E001C1B36 /* WKBookViewController.m */; };
+		E17BABD41D12934E001C1B36 /* WKBookViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E17BABD21D12934E001C1B36 /* WKBookViewController.xib */; };
+		E17BABD81D12938C001C1B36 /* WKBookTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E17BABD61D12938C001C1B36 /* WKBookTableViewCell.m */; };
+		E17BABD91D12938C001C1B36 /* WKBookTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E17BABD71D12938C001C1B36 /* WKBookTableViewCell.xib */; };
+		E17BABEF1D12B729001C1B36 /* MBProgressHUD+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = E17BABEB1D12B729001C1B36 /* MBProgressHUD+Extend.m */; };
+		E17BABF01D12B729001C1B36 /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E17BABEC1D12B729001C1B36 /* MBProgressHUD.bundle */; };
+		E17BABF11D12B729001C1B36 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = E17BABEE1D12B729001C1B36 /* MBProgressHUD.m */; };
+		E17F1CFD1D13D47D0011689C /* RMBook.m in Sources */ = {isa = PBXBuildFile; fileRef = E17F1CFC1D13D47D0011689C /* RMBook.m */; };
+		E17F2E191D11555D00E6EC42 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E17F2E181D11555D00E6EC42 /* main.m */; };
+		E17F2E1C1D11555D00E6EC42 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E17F2E1B1D11555D00E6EC42 /* AppDelegate.m */; };
+		E17F2E1F1D11555D00E6EC42 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E17F2E1E1D11555D00E6EC42 /* ViewController.m */; };
+		E17F2E221D11555D00E6EC42 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E17F2E201D11555D00E6EC42 /* Main.storyboard */; };
+		E17F2E241D11555D00E6EC42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E17F2E231D11555D00E6EC42 /* Assets.xcassets */; };
+		E17F2E271D11555D00E6EC42 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E17F2E251D11555D00E6EC42 /* LaunchScreen.storyboard */; };
+		E17F2E321D11555D00E6EC42 /* RACDouBanMovieTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E17F2E311D11555D00E6EC42 /* RACDouBanMovieTests.m */; };
+		E17F2E3D1D11555D00E6EC42 /* RACDouBanMovieUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E17F2E3C1D11555D00E6EC42 /* RACDouBanMovieUITests.m */; };
+		E17F2E531D1155EC00E6EC42 /* WKNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = E17F2E4C1D1155EC00E6EC42 /* WKNetwork.m */; };
+		E17F2E541D1155EC00E6EC42 /* WKFormData.m in Sources */ = {isa = PBXBuildFile; fileRef = E17F2E4E1D1155EC00E6EC42 /* WKFormData.m */; };
+		E17F2E551D1155EC00E6EC42 /* WKNetwork+Request.m in Sources */ = {isa = PBXBuildFile; fileRef = E17F2E501D1155EC00E6EC42 /* WKNetwork+Request.m */; };
+		E17F2E561D1155EC00E6EC42 /* RACSignal+Parser.m in Sources */ = {isa = PBXBuildFile; fileRef = E17F2E521D1155EC00E6EC42 /* RACSignal+Parser.m */; };
+		E17F2E671D115EF000E6EC42 /* WKBadgeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E17F2E5D1D115EF000E6EC42 /* WKBadgeButton.m */; };
+		E17F2E681D115EF000E6EC42 /* WKTabBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E17F2E5F1D115EF000E6EC42 /* WKTabBarButton.m */; };
+		E17F2E691D115EF000E6EC42 /* WKTabBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = E17F2E611D115EF000E6EC42 /* WKTabBarView.m */; };
+		E17F2E6A1D115EF000E6EC42 /* WKNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = E17F2E641D115EF000E6EC42 /* WKNavigationController.m */; };
+		E17F2E6B1D115EF000E6EC42 /* WKTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = E17F2E661D115EF000E6EC42 /* WKTabBarController.m */; };
+		E17F2E6F1D115F6200E6EC42 /* UIImage+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = E17F2E6E1D115F6200E6EC42 /* UIImage+Extend.m */; };
+		E17F2E721D115F6700E6EC42 /* UIColor+FlatUI.m in Sources */ = {isa = PBXBuildFile; fileRef = E17F2E711D115F6700E6EC42 /* UIColor+FlatUI.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E17F2E2E1D11555D00E6EC42 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E17F2E0C1D11555D00E6EC42 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E17F2E131D11555D00E6EC42;
+			remoteInfo = RACDouBanMovie;
+		};
+		E17F2E391D11555D00E6EC42 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E17F2E0C1D11555D00E6EC42 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E17F2E131D11555D00E6EC42;
+			remoteInfo = RACDouBanMovie;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01282BF9B4DB3DAE592AD969 /* Pods-RACDouBanMovie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RACDouBanMovie.release.xcconfig"; path = "Pods/Target Support Files/Pods-RACDouBanMovie/Pods-RACDouBanMovie.release.xcconfig"; sourceTree = "<group>"; };
+		96E7C8A17707A5EFD36C0772 /* Pods-RACDouBanMovie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RACDouBanMovie.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RACDouBanMovie/Pods-RACDouBanMovie.debug.xcconfig"; sourceTree = "<group>"; };
+		9DDEFD7991BBEA4C96AC03E2 /* Pods_RACDouBanMovie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RACDouBanMovie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E17BABBA1D124681001C1B36 /* WKBookViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKBookViewModel.h; sourceTree = "<group>"; };
+		E17BABBB1D124681001C1B36 /* WKBookViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKBookViewModel.m; sourceTree = "<group>"; };
+		E17BABBD1D1246F6001C1B36 /* WKMyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WKMyViewController.h; path = RACDouBanMovie/Class/Me/VM/WKMyViewController.h; sourceTree = SOURCE_ROOT; };
+		E17BABBE1D1246F6001C1B36 /* WKMyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WKMyViewController.m; path = RACDouBanMovie/Class/Me/VM/WKMyViewController.m; sourceTree = SOURCE_ROOT; };
+		E17BABBF1D1246F6001C1B36 /* WKMyViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = WKMyViewController.xib; path = RACDouBanMovie/Class/Me/VM/WKMyViewController.xib; sourceTree = SOURCE_ROOT; };
+		E17BABC21D12470F001C1B36 /* WKMoiveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKMoiveViewController.h; sourceTree = "<group>"; };
+		E17BABC31D12470F001C1B36 /* WKMoiveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKMoiveViewController.m; sourceTree = "<group>"; };
+		E17BABC41D12470F001C1B36 /* WKMoiveViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WKMoiveViewController.xib; sourceTree = "<group>"; };
+		E17BABC71D124728001C1B36 /* WKMusicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKMusicViewController.h; sourceTree = "<group>"; };
+		E17BABC81D124728001C1B36 /* WKMusicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKMusicViewController.m; sourceTree = "<group>"; };
+		E17BABC91D124728001C1B36 /* WKMusicViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WKMusicViewController.xib; sourceTree = "<group>"; };
+		E17BABCC1D1248AB001C1B36 /* MacroHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MacroHeader.h; sourceTree = "<group>"; };
+		E17BABCD1D128252001C1B36 /* Book.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Book.h; sourceTree = "<group>"; };
+		E17BABCE1D128252001C1B36 /* Book.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Book.m; sourceTree = "<group>"; };
+		E17BABD01D12934E001C1B36 /* WKBookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKBookViewController.h; sourceTree = "<group>"; };
+		E17BABD11D12934E001C1B36 /* WKBookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKBookViewController.m; sourceTree = "<group>"; };
+		E17BABD21D12934E001C1B36 /* WKBookViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WKBookViewController.xib; sourceTree = "<group>"; };
+		E17BABD51D12938C001C1B36 /* WKBookTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKBookTableViewCell.h; sourceTree = "<group>"; };
+		E17BABD61D12938C001C1B36 /* WKBookTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKBookTableViewCell.m; sourceTree = "<group>"; };
+		E17BABD71D12938C001C1B36 /* WKBookTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WKBookTableViewCell.xib; sourceTree = "<group>"; };
+		E17BABEA1D12B729001C1B36 /* MBProgressHUD+Extend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+Extend.h"; sourceTree = "<group>"; };
+		E17BABEB1D12B729001C1B36 /* MBProgressHUD+Extend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+Extend.m"; sourceTree = "<group>"; };
+		E17BABEC1D12B729001C1B36 /* MBProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MBProgressHUD.bundle; sourceTree = "<group>"; };
+		E17BABED1D12B729001C1B36 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		E17BABEE1D12B729001C1B36 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		E17F1CFB1D13D47D0011689C /* RMBook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMBook.h; sourceTree = "<group>"; };
+		E17F1CFC1D13D47D0011689C /* RMBook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMBook.m; sourceTree = "<group>"; };
+		E17F2E141D11555D00E6EC42 /* RACDouBanMovie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RACDouBanMovie.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E17F2E181D11555D00E6EC42 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E17F2E1A1D11555D00E6EC42 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E17F2E1B1D11555D00E6EC42 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E17F2E1D1D11555D00E6EC42 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		E17F2E1E1D11555D00E6EC42 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E17F2E211D11555D00E6EC42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E17F2E231D11555D00E6EC42 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E17F2E261D11555D00E6EC42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E17F2E281D11555D00E6EC42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E17F2E2D1D11555D00E6EC42 /* RACDouBanMovieTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RACDouBanMovieTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E17F2E311D11555D00E6EC42 /* RACDouBanMovieTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RACDouBanMovieTests.m; sourceTree = "<group>"; };
+		E17F2E331D11555D00E6EC42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E17F2E381D11555D00E6EC42 /* RACDouBanMovieUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RACDouBanMovieUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E17F2E3C1D11555D00E6EC42 /* RACDouBanMovieUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RACDouBanMovieUITests.m; sourceTree = "<group>"; };
+		E17F2E3E1D11555D00E6EC42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E17F2E4B1D1155EC00E6EC42 /* WKNetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKNetwork.h; sourceTree = "<group>"; };
+		E17F2E4C1D1155EC00E6EC42 /* WKNetwork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKNetwork.m; sourceTree = "<group>"; };
+		E17F2E4D1D1155EC00E6EC42 /* WKFormData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKFormData.h; sourceTree = "<group>"; };
+		E17F2E4E1D1155EC00E6EC42 /* WKFormData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKFormData.m; sourceTree = "<group>"; };
+		E17F2E4F1D1155EC00E6EC42 /* WKNetwork+Request.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WKNetwork+Request.h"; sourceTree = "<group>"; };
+		E17F2E501D1155EC00E6EC42 /* WKNetwork+Request.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "WKNetwork+Request.m"; sourceTree = "<group>"; };
+		E17F2E511D1155EC00E6EC42 /* RACSignal+Parser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RACSignal+Parser.h"; sourceTree = "<group>"; };
+		E17F2E521D1155EC00E6EC42 /* RACSignal+Parser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RACSignal+Parser.m"; sourceTree = "<group>"; };
+		E17F2E581D1156CD00E6EC42 /* RACDouBanMoviePrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RACDouBanMoviePrefixHeader.pch; sourceTree = "<group>"; };
+		E17F2E591D11581000E6EC42 /* APIHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIHeader.h; sourceTree = "<group>"; };
+		E17F2E5C1D115EF000E6EC42 /* WKBadgeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKBadgeButton.h; sourceTree = "<group>"; };
+		E17F2E5D1D115EF000E6EC42 /* WKBadgeButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKBadgeButton.m; sourceTree = "<group>"; };
+		E17F2E5E1D115EF000E6EC42 /* WKTabBarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKTabBarButton.h; sourceTree = "<group>"; };
+		E17F2E5F1D115EF000E6EC42 /* WKTabBarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKTabBarButton.m; sourceTree = "<group>"; };
+		E17F2E601D115EF000E6EC42 /* WKTabBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKTabBarView.h; sourceTree = "<group>"; };
+		E17F2E611D115EF000E6EC42 /* WKTabBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKTabBarView.m; sourceTree = "<group>"; };
+		E17F2E631D115EF000E6EC42 /* WKNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKNavigationController.h; sourceTree = "<group>"; };
+		E17F2E641D115EF000E6EC42 /* WKNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKNavigationController.m; sourceTree = "<group>"; };
+		E17F2E651D115EF000E6EC42 /* WKTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKTabBarController.h; sourceTree = "<group>"; };
+		E17F2E661D115EF000E6EC42 /* WKTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKTabBarController.m; sourceTree = "<group>"; };
+		E17F2E6D1D115F6200E6EC42 /* UIImage+Extend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extend.h"; sourceTree = "<group>"; };
+		E17F2E6E1D115F6200E6EC42 /* UIImage+Extend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extend.m"; sourceTree = "<group>"; };
+		E17F2E701D115F6700E6EC42 /* UIColor+FlatUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+FlatUI.h"; sourceTree = "<group>"; };
+		E17F2E711D115F6700E6EC42 /* UIColor+FlatUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+FlatUI.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E17F2E111D11555D00E6EC42 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A97859D14BB2D09F021FFA0A /* Pods_RACDouBanMovie.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E17F2E2A1D11555D00E6EC42 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E17F2E351D11555D00E6EC42 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7A19904B3C771FB563784924 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				96E7C8A17707A5EFD36C0772 /* Pods-RACDouBanMovie.debug.xcconfig */,
+				01282BF9B4DB3DAE592AD969 /* Pods-RACDouBanMovie.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		95E4D573E70EE59496FDC446 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9DDEFD7991BBEA4C96AC03E2 /* Pods_RACDouBanMovie.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E17BAB9E1D1241C3001C1B36 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				E17BABA51D1242DD001C1B36 /* Book */,
+				E17BABA91D1242DD001C1B36 /* Me */,
+				E17BABAD1D1242DD001C1B36 /* Moive */,
+				E17BABB11D1242DD001C1B36 /* Music */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		E17BABA51D1242DD001C1B36 /* Book */ = {
+			isa = PBXGroup;
+			children = (
+				E17BABD01D12934E001C1B36 /* WKBookViewController.h */,
+				E17BABD11D12934E001C1B36 /* WKBookViewController.m */,
+				E17BABD21D12934E001C1B36 /* WKBookViewController.xib */,
+				E17BABA61D1242DD001C1B36 /* M */,
+				E17BABA71D1242DD001C1B36 /* V */,
+				E17BABA81D1242DD001C1B36 /* VM */,
+			);
+			path = Book;
+			sourceTree = "<group>";
+		};
+		E17BABA61D1242DD001C1B36 /* M */ = {
+			isa = PBXGroup;
+			children = (
+				E17BABCD1D128252001C1B36 /* Book.h */,
+				E17BABCE1D128252001C1B36 /* Book.m */,
+				E17F1CFB1D13D47D0011689C /* RMBook.h */,
+				E17F1CFC1D13D47D0011689C /* RMBook.m */,
+			);
+			path = M;
+			sourceTree = "<group>";
+		};
+		E17BABA71D1242DD001C1B36 /* V */ = {
+			isa = PBXGroup;
+			children = (
+				E17BABD51D12938C001C1B36 /* WKBookTableViewCell.h */,
+				E17BABD61D12938C001C1B36 /* WKBookTableViewCell.m */,
+				E17BABD71D12938C001C1B36 /* WKBookTableViewCell.xib */,
+			);
+			path = V;
+			sourceTree = "<group>";
+		};
+		E17BABA81D1242DD001C1B36 /* VM */ = {
+			isa = PBXGroup;
+			children = (
+				E17BABBA1D124681001C1B36 /* WKBookViewModel.h */,
+				E17BABBB1D124681001C1B36 /* WKBookViewModel.m */,
+			);
+			path = VM;
+			sourceTree = "<group>";
+		};
+		E17BABA91D1242DD001C1B36 /* Me */ = {
+			isa = PBXGroup;
+			children = (
+				E17BABAA1D1242DD001C1B36 /* M */,
+				E17BABAB1D1242DD001C1B36 /* V */,
+				E17BABAC1D1242DD001C1B36 /* VM */,
+			);
+			path = Me;
+			sourceTree = "<group>";
+		};
+		E17BABAA1D1242DD001C1B36 /* M */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = M;
+			sourceTree = "<group>";
+		};
+		E17BABAB1D1242DD001C1B36 /* V */ = {
+			isa = PBXGroup;
+			children = (
+				E17BABBD1D1246F6001C1B36 /* WKMyViewController.h */,
+				E17BABBE1D1246F6001C1B36 /* WKMyViewController.m */,
+				E17BABBF1D1246F6001C1B36 /* WKMyViewController.xib */,
+			);
+			path = V;
+			sourceTree = "<group>";
+		};
+		E17BABAC1D1242DD001C1B36 /* VM */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = VM;
+			sourceTree = "<group>";
+		};
+		E17BABAD1D1242DD001C1B36 /* Moive */ = {
+			isa = PBXGroup;
+			children = (
+				E17BABAE1D1242DD001C1B36 /* M */,
+				E17BABAF1D1242DD001C1B36 /* V */,
+				E17BABB01D1242DD001C1B36 /* VM */,
+			);
+			path = Moive;
+			sourceTree = "<group>";
+		};
+		E17BABAE1D1242DD001C1B36 /* M */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = M;
+			sourceTree = "<group>";
+		};
+		E17BABAF1D1242DD001C1B36 /* V */ = {
+			isa = PBXGroup;
+			children = (
+				E17BABC21D12470F001C1B36 /* WKMoiveViewController.h */,
+				E17BABC31D12470F001C1B36 /* WKMoiveViewController.m */,
+				E17BABC41D12470F001C1B36 /* WKMoiveViewController.xib */,
+			);
+			path = V;
+			sourceTree = "<group>";
+		};
+		E17BABB01D1242DD001C1B36 /* VM */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = VM;
+			sourceTree = "<group>";
+		};
+		E17BABB11D1242DD001C1B36 /* Music */ = {
+			isa = PBXGroup;
+			children = (
+				E17BABB21D1242DD001C1B36 /* M */,
+				E17BABB31D1242DD001C1B36 /* V */,
+				E17BABB41D1242DD001C1B36 /* VM */,
+			);
+			path = Music;
+			sourceTree = "<group>";
+		};
+		E17BABB21D1242DD001C1B36 /* M */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = M;
+			sourceTree = "<group>";
+		};
+		E17BABB31D1242DD001C1B36 /* V */ = {
+			isa = PBXGroup;
+			children = (
+				E17BABC71D124728001C1B36 /* WKMusicViewController.h */,
+				E17BABC81D124728001C1B36 /* WKMusicViewController.m */,
+				E17BABC91D124728001C1B36 /* WKMusicViewController.xib */,
+			);
+			path = V;
+			sourceTree = "<group>";
+		};
+		E17BABB41D1242DD001C1B36 /* VM */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = VM;
+			sourceTree = "<group>";
+		};
+		E17BABE91D12B729001C1B36 /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				E17BABEA1D12B729001C1B36 /* MBProgressHUD+Extend.h */,
+				E17BABEB1D12B729001C1B36 /* MBProgressHUD+Extend.m */,
+				E17BABEC1D12B729001C1B36 /* MBProgressHUD.bundle */,
+				E17BABED1D12B729001C1B36 /* MBProgressHUD.h */,
+				E17BABEE1D12B729001C1B36 /* MBProgressHUD.m */,
+			);
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+		E17F2E0B1D11555D00E6EC42 = {
+			isa = PBXGroup;
+			children = (
+				E17F2E161D11555D00E6EC42 /* RACDouBanMovie */,
+				E17F2E301D11555D00E6EC42 /* RACDouBanMovieTests */,
+				E17F2E3B1D11555D00E6EC42 /* RACDouBanMovieUITests */,
+				E17F2E151D11555D00E6EC42 /* Products */,
+				7A19904B3C771FB563784924 /* Pods */,
+				95E4D573E70EE59496FDC446 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E17F2E151D11555D00E6EC42 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E17F2E141D11555D00E6EC42 /* RACDouBanMovie.app */,
+				E17F2E2D1D11555D00E6EC42 /* RACDouBanMovieTests.xctest */,
+				E17F2E381D11555D00E6EC42 /* RACDouBanMovieUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E17F2E161D11555D00E6EC42 /* RACDouBanMovie */ = {
+			isa = PBXGroup;
+			children = (
+				E17BAB9E1D1241C3001C1B36 /* Class */,
+				E17F2E6C1D115F5000E6EC42 /* Category */,
+				E17F2E5A1D115EF000E6EC42 /* Tabbar */,
+				E17F2E4A1D1155BD00E6EC42 /* Network */,
+				E17F2E1A1D11555D00E6EC42 /* AppDelegate.h */,
+				E17F2E1B1D11555D00E6EC42 /* AppDelegate.m */,
+				E17F2E1D1D11555D00E6EC42 /* ViewController.h */,
+				E17F2E1E1D11555D00E6EC42 /* ViewController.m */,
+				E17BABCC1D1248AB001C1B36 /* MacroHeader.h */,
+				E17F2E201D11555D00E6EC42 /* Main.storyboard */,
+				E17F2E581D1156CD00E6EC42 /* RACDouBanMoviePrefixHeader.pch */,
+				E17F2E231D11555D00E6EC42 /* Assets.xcassets */,
+				E17F2E251D11555D00E6EC42 /* LaunchScreen.storyboard */,
+				E17F2E281D11555D00E6EC42 /* Info.plist */,
+				E17F2E171D11555D00E6EC42 /* Supporting Files */,
+			);
+			path = RACDouBanMovie;
+			sourceTree = "<group>";
+		};
+		E17F2E171D11555D00E6EC42 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E17F2E181D11555D00E6EC42 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E17F2E301D11555D00E6EC42 /* RACDouBanMovieTests */ = {
+			isa = PBXGroup;
+			children = (
+				E17F2E311D11555D00E6EC42 /* RACDouBanMovieTests.m */,
+				E17F2E331D11555D00E6EC42 /* Info.plist */,
+			);
+			path = RACDouBanMovieTests;
+			sourceTree = "<group>";
+		};
+		E17F2E3B1D11555D00E6EC42 /* RACDouBanMovieUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E17F2E3C1D11555D00E6EC42 /* RACDouBanMovieUITests.m */,
+				E17F2E3E1D11555D00E6EC42 /* Info.plist */,
+			);
+			path = RACDouBanMovieUITests;
+			sourceTree = "<group>";
+		};
+		E17F2E4A1D1155BD00E6EC42 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				E17F2E591D11581000E6EC42 /* APIHeader.h */,
+				E17F2E4B1D1155EC00E6EC42 /* WKNetwork.h */,
+				E17F2E4C1D1155EC00E6EC42 /* WKNetwork.m */,
+				E17F2E4D1D1155EC00E6EC42 /* WKFormData.h */,
+				E17F2E4E1D1155EC00E6EC42 /* WKFormData.m */,
+				E17F2E4F1D1155EC00E6EC42 /* WKNetwork+Request.h */,
+				E17F2E501D1155EC00E6EC42 /* WKNetwork+Request.m */,
+				E17F2E511D1155EC00E6EC42 /* RACSignal+Parser.h */,
+				E17F2E521D1155EC00E6EC42 /* RACSignal+Parser.m */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		E17F2E5A1D115EF000E6EC42 /* Tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				E17F2E5B1D115EF000E6EC42 /* View */,
+				E17F2E621D115EF000E6EC42 /* ViewController */,
+			);
+			name = Tabbar;
+			path = tabbar;
+			sourceTree = "<group>";
+		};
+		E17F2E5B1D115EF000E6EC42 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E17F2E5C1D115EF000E6EC42 /* WKBadgeButton.h */,
+				E17F2E5D1D115EF000E6EC42 /* WKBadgeButton.m */,
+				E17F2E5E1D115EF000E6EC42 /* WKTabBarButton.h */,
+				E17F2E5F1D115EF000E6EC42 /* WKTabBarButton.m */,
+				E17F2E601D115EF000E6EC42 /* WKTabBarView.h */,
+				E17F2E611D115EF000E6EC42 /* WKTabBarView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E17F2E621D115EF000E6EC42 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E17F2E631D115EF000E6EC42 /* WKNavigationController.h */,
+				E17F2E641D115EF000E6EC42 /* WKNavigationController.m */,
+				E17F2E651D115EF000E6EC42 /* WKTabBarController.h */,
+				E17F2E661D115EF000E6EC42 /* WKTabBarController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		E17F2E6C1D115F5000E6EC42 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				E17BABE91D12B729001C1B36 /* MBProgressHUD */,
+				E17F2E701D115F6700E6EC42 /* UIColor+FlatUI.h */,
+				E17F2E711D115F6700E6EC42 /* UIColor+FlatUI.m */,
+				E17F2E6D1D115F6200E6EC42 /* UIImage+Extend.h */,
+				E17F2E6E1D115F6200E6EC42 /* UIImage+Extend.m */,
+			);
+			name = Category;
+			path = category;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E17F2E131D11555D00E6EC42 /* RACDouBanMovie */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E17F2E411D11555D00E6EC42 /* Build configuration list for PBXNativeTarget "RACDouBanMovie" */;
+			buildPhases = (
+				1D0F2B0E54D633B6DA71FC67 /* 📦 Check Pods Manifest.lock */,
+				E17F2E101D11555D00E6EC42 /* Sources */,
+				E17F2E111D11555D00E6EC42 /* Frameworks */,
+				E17F2E121D11555D00E6EC42 /* Resources */,
+				80F74D9C96A0113835DA8162 /* 📦 Embed Pods Frameworks */,
+				A83CBDE6B7F1F5D13DA5C687 /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RACDouBanMovie;
+			productName = RACDouBanMovie;
+			productReference = E17F2E141D11555D00E6EC42 /* RACDouBanMovie.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E17F2E2C1D11555D00E6EC42 /* RACDouBanMovieTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E17F2E441D11555D00E6EC42 /* Build configuration list for PBXNativeTarget "RACDouBanMovieTests" */;
+			buildPhases = (
+				E17F2E291D11555D00E6EC42 /* Sources */,
+				E17F2E2A1D11555D00E6EC42 /* Frameworks */,
+				E17F2E2B1D11555D00E6EC42 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E17F2E2F1D11555D00E6EC42 /* PBXTargetDependency */,
+			);
+			name = RACDouBanMovieTests;
+			productName = RACDouBanMovieTests;
+			productReference = E17F2E2D1D11555D00E6EC42 /* RACDouBanMovieTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E17F2E371D11555D00E6EC42 /* RACDouBanMovieUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E17F2E471D11555D00E6EC42 /* Build configuration list for PBXNativeTarget "RACDouBanMovieUITests" */;
+			buildPhases = (
+				E17F2E341D11555D00E6EC42 /* Sources */,
+				E17F2E351D11555D00E6EC42 /* Frameworks */,
+				E17F2E361D11555D00E6EC42 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E17F2E3A1D11555D00E6EC42 /* PBXTargetDependency */,
+			);
+			name = RACDouBanMovieUITests;
+			productName = RACDouBanMovieUITests;
+			productReference = E17F2E381D11555D00E6EC42 /* RACDouBanMovieUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E17F2E0C1D11555D00E6EC42 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "孟辉";
+				TargetAttributes = {
+					E17F2E131D11555D00E6EC42 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					E17F2E2C1D11555D00E6EC42 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = E17F2E131D11555D00E6EC42;
+					};
+					E17F2E371D11555D00E6EC42 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = E17F2E131D11555D00E6EC42;
+					};
+				};
+			};
+			buildConfigurationList = E17F2E0F1D11555D00E6EC42 /* Build configuration list for PBXProject "RACDouBanMovie" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E17F2E0B1D11555D00E6EC42;
+			productRefGroup = E17F2E151D11555D00E6EC42 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E17F2E131D11555D00E6EC42 /* RACDouBanMovie */,
+				E17F2E2C1D11555D00E6EC42 /* RACDouBanMovieTests */,
+				E17F2E371D11555D00E6EC42 /* RACDouBanMovieUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E17F2E121D11555D00E6EC42 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E17BABD91D12938C001C1B36 /* WKBookTableViewCell.xib in Resources */,
+				E17BABCB1D124728001C1B36 /* WKMusicViewController.xib in Resources */,
+				E17F2E271D11555D00E6EC42 /* LaunchScreen.storyboard in Resources */,
+				E17BABD41D12934E001C1B36 /* WKBookViewController.xib in Resources */,
+				E17F2E241D11555D00E6EC42 /* Assets.xcassets in Resources */,
+				E17BABF01D12B729001C1B36 /* MBProgressHUD.bundle in Resources */,
+				E17BABC61D12470F001C1B36 /* WKMoiveViewController.xib in Resources */,
+				E17BABC11D1246F6001C1B36 /* WKMyViewController.xib in Resources */,
+				E17F2E221D11555D00E6EC42 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E17F2E2B1D11555D00E6EC42 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E17F2E361D11555D00E6EC42 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1D0F2B0E54D633B6DA71FC67 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		80F74D9C96A0113835DA8162 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RACDouBanMovie/Pods-RACDouBanMovie-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A83CBDE6B7F1F5D13DA5C687 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RACDouBanMovie/Pods-RACDouBanMovie-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E17F2E101D11555D00E6EC42 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E17BABCF1D128252001C1B36 /* Book.m in Sources */,
+				E17F2E6A1D115EF000E6EC42 /* WKNavigationController.m in Sources */,
+				E17BABF11D12B729001C1B36 /* MBProgressHUD.m in Sources */,
+				E17F2E691D115EF000E6EC42 /* WKTabBarView.m in Sources */,
+				E17F2E6F1D115F6200E6EC42 /* UIImage+Extend.m in Sources */,
+				E17F2E551D1155EC00E6EC42 /* WKNetwork+Request.m in Sources */,
+				E17F2E1F1D11555D00E6EC42 /* ViewController.m in Sources */,
+				E17BABBC1D124681001C1B36 /* WKBookViewModel.m in Sources */,
+				E17F2E1C1D11555D00E6EC42 /* AppDelegate.m in Sources */,
+				E17BABC51D12470F001C1B36 /* WKMoiveViewController.m in Sources */,
+				E17F2E6B1D115EF000E6EC42 /* WKTabBarController.m in Sources */,
+				E17BABC01D1246F6001C1B36 /* WKMyViewController.m in Sources */,
+				E17F2E671D115EF000E6EC42 /* WKBadgeButton.m in Sources */,
+				E17BABCA1D124728001C1B36 /* WKMusicViewController.m in Sources */,
+				E17BABD31D12934E001C1B36 /* WKBookViewController.m in Sources */,
+				E17F2E681D115EF000E6EC42 /* WKTabBarButton.m in Sources */,
+				E17F2E561D1155EC00E6EC42 /* RACSignal+Parser.m in Sources */,
+				E17F2E721D115F6700E6EC42 /* UIColor+FlatUI.m in Sources */,
+				E17F2E541D1155EC00E6EC42 /* WKFormData.m in Sources */,
+				E17F2E531D1155EC00E6EC42 /* WKNetwork.m in Sources */,
+				E17F2E191D11555D00E6EC42 /* main.m in Sources */,
+				E17F1CFD1D13D47D0011689C /* RMBook.m in Sources */,
+				E17BABD81D12938C001C1B36 /* WKBookTableViewCell.m in Sources */,
+				E17BABEF1D12B729001C1B36 /* MBProgressHUD+Extend.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E17F2E291D11555D00E6EC42 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E17F2E321D11555D00E6EC42 /* RACDouBanMovieTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E17F2E341D11555D00E6EC42 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E17F2E3D1D11555D00E6EC42 /* RACDouBanMovieUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E17F2E2F1D11555D00E6EC42 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E17F2E131D11555D00E6EC42 /* RACDouBanMovie */;
+			targetProxy = E17F2E2E1D11555D00E6EC42 /* PBXContainerItemProxy */;
+		};
+		E17F2E3A1D11555D00E6EC42 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E17F2E131D11555D00E6EC42 /* RACDouBanMovie */;
+			targetProxy = E17F2E391D11555D00E6EC42 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E17F2E201D11555D00E6EC42 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E17F2E211D11555D00E6EC42 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E17F2E251D11555D00E6EC42 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E17F2E261D11555D00E6EC42 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E17F2E3F1D11555D00E6EC42 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E17F2E401D11555D00E6EC42 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E17F2E421D11555D00E6EC42 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96E7C8A17707A5EFD36C0772 /* Pods-RACDouBanMovie.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = /Users/menghui/Desktop/RACDouBanMovie/RACDouBanMovie/RACDouBanMoviePrefixHeader.pch;
+				INFOPLIST_FILE = RACDouBanMovie/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.iasku.RACDouBanMovie;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E17F2E431D11555D00E6EC42 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 01282BF9B4DB3DAE592AD969 /* Pods-RACDouBanMovie.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = /Users/menghui/Desktop/RACDouBanMovie/RACDouBanMovie/RACDouBanMoviePrefixHeader.pch;
+				INFOPLIST_FILE = RACDouBanMovie/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.iasku.RACDouBanMovie;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		E17F2E451D11555D00E6EC42 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = RACDouBanMovieTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.iasku.RACDouBanMovieTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RACDouBanMovie.app/RACDouBanMovie";
+			};
+			name = Debug;
+		};
+		E17F2E461D11555D00E6EC42 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = RACDouBanMovieTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.iasku.RACDouBanMovieTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RACDouBanMovie.app/RACDouBanMovie";
+			};
+			name = Release;
+		};
+		E17F2E481D11555D00E6EC42 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = RACDouBanMovieUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.iasku.RACDouBanMovieUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = RACDouBanMovie;
+			};
+			name = Debug;
+		};
+		E17F2E491D11555D00E6EC42 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = RACDouBanMovieUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.iasku.RACDouBanMovieUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = RACDouBanMovie;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E17F2E0F1D11555D00E6EC42 /* Build configuration list for PBXProject "RACDouBanMovie" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E17F2E3F1D11555D00E6EC42 /* Debug */,
+				E17F2E401D11555D00E6EC42 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E17F2E411D11555D00E6EC42 /* Build configuration list for PBXNativeTarget "RACDouBanMovie" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E17F2E421D11555D00E6EC42 /* Debug */,
+				E17F2E431D11555D00E6EC42 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E17F2E441D11555D00E6EC42 /* Build configuration list for PBXNativeTarget "RACDouBanMovieTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E17F2E451D11555D00E6EC42 /* Debug */,
+				E17F2E461D11555D00E6EC42 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E17F2E471D11555D00E6EC42 /* Build configuration list for PBXNativeTarget "RACDouBanMovieUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E17F2E481D11555D00E6EC42 /* Debug */,
+				E17F2E491D11555D00E6EC42 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E17F2E0C1D11555D00E6EC42 /* Project object */;
+}
