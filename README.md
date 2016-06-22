@@ -29,21 +29,21 @@ ReactiveCocoa + mvvm demo
   * 接下来去是解析 我写了RACSignal+Parser这个类
      
         
-        /**
-		 *  解析一个对象
-		 *
-		 *  @param modelClass 类名
-		 *
-		 *  @return 信号
-		 */
+        
+		   解析一个对象
+		 
+		   @param modelClass 类名
+		 
+		   @return 信号
+		
 		- (RACSignal *)parsermodelClass:(Class)modelClass;
-		/**
-		 *  解析一个数组
-		 *
-		 *  @param modelArray 类名
-		 *
-		 *  @return 信号
-		 */
+		
+		   解析一个数组
+		 
+		   @param modelArray 类名
+		 
+		   @return 信号
+		 
 		- (RACSignal *)parsermodelArray:(Class)modelArray;
 		
 		
