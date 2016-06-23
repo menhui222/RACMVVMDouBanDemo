@@ -65,7 +65,7 @@ static NSString * const kBookCell = @"kWKBookTableViewCell";
     WKBookTableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:kBookCell forIndexPath:indexPath];
     [cell setModel:book];
     @weakify(self)
-    RACDisposable *disposable= [[[cell.subscriberBtn rac_signalForControlEvents:UIControlEventTouchUpInside] takeUntil:cell.rac_prepareForReuseSignal] subscribeNext:^(id x) {
+    [[[cell.subscriberBtn rac_signalForControlEvents:UIControlEventTouchUpInside] takeUntil:cell.rac_prepareForReuseSignal] subscribeNext:^(id x) {
          @strongify(self)
          
         [self.bookViewModel.subscriberComand execute:RACTuplePack(@(indexPath.row),@(cell.subscriberBtn.selected))];
