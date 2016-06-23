@@ -63,10 +63,8 @@
         _requestCommad = [[RACCommand alloc] initWithSignalBlock:^RACSignal *(id input) {
             @strongify(self)
             NSDictionary *params = @{@"q":@"都市",@"start":@(self.start),@"count":@(self.count)};
-            
-            return [[[[WKNetwork GET:kAPIURLBookSearch parameters:params] parsermodelArray:[Book class]] doNext:^(id x) {
-                [MBProgressHUD showMessage:@"加载中..."];
-            }] doCompleted:^{
+            [MBProgressHUD showMessage:@"加载中..."];
+            return [[[WKNetwork GET:kAPIURLBookSearch parameters:params] parsermodelArray:[Book class]] doNext:^(id x) {
                 [MBProgressHUD hideHUD];
             }];
         }];
