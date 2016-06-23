@@ -7,7 +7,6 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WKBookViewController">
             <connections>
-                <outlet property="tableView" destination="Gy2-4e-6Vc" id="br9-yP-XuX"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -15,19 +14,7 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="352" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-            <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Gy2-4e-6Vc">
-                    <rect key="frame" x="0.0" y="0.0" width="352" height="600"/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                </tableView>
-            </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-            <constraints>
-                <constraint firstAttribute="trailing" secondItem="Gy2-4e-6Vc" secondAttribute="trailing" id="3re-4U-2Ac"/>
-                <constraint firstItem="Gy2-4e-6Vc" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="aDe-Ef-jt6"/>
-                <constraint firstItem="Gy2-4e-6Vc" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="dv7-Ps-qkb"/>
-                <constraint firstAttribute="bottom" secondItem="Gy2-4e-6Vc" secondAttribute="bottom" id="h4s-gF-tQs"/>
-            </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <point key="canvasLocation" x="215" y="396"/>
         </view>

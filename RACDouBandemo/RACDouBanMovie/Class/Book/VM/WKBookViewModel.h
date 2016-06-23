@@ -6,15 +6,13 @@
 //  Copyright © 2016年 孟辉. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "WKRefreshViewModel.h"
 #import "Book.h"
 
-@interface WKBookViewModel : NSObject
+@interface WKBookViewModel : WKRefreshViewModel
 
 
-@property (nonatomic,assign)int start;
-@property (nonatomic,assign)int count;
-@property (nonatomic,assign)int total;
+
 
 @property (nonatomic,strong)RACCommand *requestCommad;
 

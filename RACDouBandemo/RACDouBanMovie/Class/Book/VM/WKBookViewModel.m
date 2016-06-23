@@ -13,32 +13,43 @@
 - (instancetype)init
 {
     if (self = [super init]) {
-        _count = 10;
-        _start = 0;
-        _total = 0;
-        [self mh_bindEvent];
+        
     }
     return self;
+}
+- (void)mh_initialize{
+    
+    [self mh_bindEvent];
 }
 - (void)mh_bindEvent{
     [self.requestCommad.executionSignals.switchToLatest subscribeNext:^(id x) {
         if ([x isKindOfClass:[NSError class]]) {
+            [self.updateUISubject sendNext:@(WKRefreshError)];
             return ;
         }
         RACTupleUnpack(NSMutableArray *array,NSNumber *total) = x;
-        if (_start == 0) {
+        if (self.start == 0) {
           self.dataArray =  array;
           self.total = [total intValue];
+            if (self.total == self.dataArray.count||self.dataArray.count == 0) {
+                [self.updateUISubject sendNext:@(WKHeaderRefresh_HasNoMoreData)];
+            }else{
+             
+                [self.updateUISubject sendNext:@(WKHeaderRefresh_HasMoreData)];
+            }
+           
         }else{
             [self.dataArray addObjectsFromArray:array];
             self.total = [total intValue];
+            if (self.total == self.dataArray.count) {
+                [self.updateUISubject sendNext:@(WKFooterRefresh_HasNoMoreData)];
+            }else{
+                [self.updateUISubject sendNext:@(WKFooterRefresh_HasMoreData)];
+            }
+            
         }
-        [self.updateUISubject sendNext:@(YES)];
- 
     }];
-    [self.requestCommad.executionSignals.switchToLatest subscribeNext:^(id x) {
-        
-    }];
+    
     [self.subscriberComand.executionSignals.switchToLatest subscribeNext:^(id x) {
         
     }];
@@ -48,8 +59,10 @@
 
     if (!_requestCommad)
     {
+        @weakify(self)
         _requestCommad = [[RACCommand alloc] initWithSignalBlock:^RACSignal *(id input) {
-            NSDictionary *params = @{@"q":@"都市",@"start":@(_start),@"count":@(_count)};
+            @strongify(self)
+            NSDictionary *params = @{@"q":@"都市",@"start":@(self.start),@"count":@(self.count)};
             
             return [[[[WKNetwork GET:kAPIURLBookSearch parameters:params] parsermodelArray:[Book class]] doNext:^(id x) {
                 [MBProgressHUD showMessage:@"加载中..."];
@@ -96,7 +109,7 @@
                 return [RACDisposable disposableWithBlock:^{
                     
                 }];
-            }] ;
+            }];
             
              
         }];

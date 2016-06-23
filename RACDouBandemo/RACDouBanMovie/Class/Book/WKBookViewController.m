@@ -9,10 +9,11 @@
 #import "WKBookViewController.h"
 #import "WKBookViewModel.h"
 #import "WKBookTableViewCell.h"
+#import "MJRefresh.h"
 static NSString * const kBookCell = @"kWKBookTableViewCell";
 
 @interface WKBookViewController ()<UITableViewDelegate,UITableViewDataSource>
-@property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (strong, nonatomic)  UITableView *tableView;
 @property (strong, nonatomic) WKBookViewModel *bookViewModel;
 
 @end
@@ -27,16 +28,91 @@ static NSString * const kBookCell = @"kWKBookTableViewCell";
 }
 - (void)mh_addSubviews
 {
-    [self.tableView registerNib:[UINib nibWithNibName:@"WKBookTableViewCell" bundle:nil] forCellReuseIdentifier:kBookCell];
-    self.tableView.delegate = self;
-    self.tableView.dataSource = self;
-    self.tableView.tableFooterView = [[UIView alloc] init];
+   
+    [self.view addSubview:self.tableView];
+    [self.tableView mas_remakeConstraints:^(MASConstraintMaker *make) {
+        make.edges.equalTo(self.view);
+    }];
+    @weakify(self);
+    self.tableView.mj_header = [MJRefreshStateHeader headerWithRefreshingBlock:^{
+        @strongify(self);
+        [self.bookViewModel startPage];
+        [self.bookViewModel.requestCommad execute:nil];
+    }];
+    self.tableView.mj_footer = [MJRefreshBackNormalFooter footerWithRefreshingBlock:^{
+        @strongify(self);
+        [self.bookViewModel pageDown];
+        [self.bookViewModel.requestCommad execute:nil];
+    }];
 }
 
-- (void)mh_bindViewModel{
+- (UITableView *)tableView
+{
+    if (!_tableView)
+    {
+       
+        _tableView = [[UITableView alloc] init];
+        [_tableView registerNib:[UINib nibWithNibName:@"WKBookTableViewCell" bundle:nil] forCellReuseIdentifier:kBookCell];
+        _tableView.delegate = self;
+        _tableView.dataSource = self;
+        _tableView.tableFooterView = [[UIView alloc] init];
+    }
+    return _tableView;
 
-   [self.bookViewModel.updateUISubject subscribeNext:^(id x) {
+
+}
+- (void)mh_bindViewModel{
+    @weakify(self);
+    
+   [self.bookViewModel.updateUISubject subscribeNext:^(NSNumber * x) {
+       @strongify(self);
+       
        [self.tableView reloadData];
+      
+       switch ([x integerValue]) {
+           case WKHeaderRefresh_HasMoreData: {
+               
+               [self.tableView.mj_header endRefreshing];
+               
+               if (self.tableView.mj_footer == nil) {
+                   
+                   self.tableView.mj_footer = [MJRefreshBackNormalFooter footerWithRefreshingBlock:^{
+                       @strongify(self);
+                       [self.bookViewModel pageDown];
+                       [self.bookViewModel.requestCommad execute:nil];
+                   }];
+               }
+           }
+               break;
+           case WKHeaderRefresh_HasNoMoreData: {
+               
+               [self.tableView.mj_header endRefreshing];
+               self.tableView.mj_footer = nil;
+           }
+               break;
+           case WKFooterRefresh_HasMoreData: {
+               
+               [self.tableView.mj_header endRefreshing];
+               [self.tableView.mj_footer resetNoMoreData];
+               [self.tableView.mj_footer endRefreshing];
+           }
+               break;
+           case WKFooterRefresh_HasNoMoreData: {
+               [self.tableView.mj_header endRefreshing];
+               [self.tableView.mj_footer endRefreshingWithNoMoreData];
+           }
+               break;
+           case WKRefreshError: {
+               
+               [self.tableView.mj_footer endRefreshing];
+               [self.tableView.mj_header endRefreshing];
+           }
+               break;
+               
+           default:
+               break;
+       }
+
    }];
     [self.bookViewModel.requestCommad execute:nil];
     
@@ -65,7 +141,7 @@ static NSString * const kBookCell = @"kWKBookTableViewCell";
     WKBookTableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:kBookCell forIndexPath:indexPath];
     [cell setModel:book];
     @weakify(self)
-    [[[cell.subscriberBtn rac_signalForControlEvents:UIControlEventTouchUpInside] takeUntil:cell.rac_prepareForReuseSignal] subscribeNext:^(id x) {
+    RACDisposable *disposable= [[[cell.subscriberBtn rac_signalForControlEvents:UIControlEventTouchUpInside] takeUntil:cell.rac_prepareForReuseSignal] subscribeNext:^(id x) {
          @strongify(self)
          
         [self.bookViewModel.subscriberComand execute:RACTuplePack(@(indexPath.row),@(cell.subscriberBtn.selected))];
@@ -84,6 +160,7 @@ static NSString * const kBookCell = @"kWKBookTableViewCell";
     return 120;
 
 }
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

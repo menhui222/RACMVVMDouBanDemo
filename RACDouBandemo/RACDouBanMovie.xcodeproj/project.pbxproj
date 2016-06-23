@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		A97859D14BB2D09F021FFA0A /* Pods_RACDouBanMovie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DDEFD7991BBEA4C96AC03E2 /* Pods_RACDouBanMovie.framework */; };
-		E17BABBC1D124681001C1B36 /* WKBookViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E17BABBB1D124681001C1B36 /* WKBookViewModel.m */; };
 		E17BABC01D1246F6001C1B36 /* WKMyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E17BABBE1D1246F6001C1B36 /* WKMyViewController.m */; };
 		E17BABC11D1246F6001C1B36 /* WKMyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E17BABBF1D1246F6001C1B36 /* WKMyViewController.xib */; };
 		E17BABC51D12470F001C1B36 /* WKMoiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E17BABC31D12470F001C1B36 /* WKMoiveViewController.m */; };
@@ -16,8 +15,6 @@
 		E17BABCA1D124728001C1B36 /* WKMusicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E17BABC81D124728001C1B36 /* WKMusicViewController.m */; };
 		E17BABCB1D124728001C1B36 /* WKMusicViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E17BABC91D124728001C1B36 /* WKMusicViewController.xib */; };
 		E17BABCF1D128252001C1B36 /* Book.m in Sources */ = {isa = PBXBuildFile; fileRef = E17BABCE1D128252001C1B36 /* Book.m */; };
-		E17BABD31D12934E001C1B36 /* WKBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E17BABD11D12934E001C1B36 /* WKBookViewController.m */; };
-		E17BABD41D12934E001C1B36 /* WKBookViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E17BABD21D12934E001C1B36 /* WKBookViewController.xib */; };
 		E17BABD81D12938C001C1B36 /* WKBookTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E17BABD61D12938C001C1B36 /* WKBookTableViewCell.m */; };
 		E17BABD91D12938C001C1B36 /* WKBookTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E17BABD71D12938C001C1B36 /* WKBookTableViewCell.xib */; };
 		E17BABEF1D12B729001C1B36 /* MBProgressHUD+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = E17BABEB1D12B729001C1B36 /* MBProgressHUD+Extend.m */; };
@@ -43,6 +40,13 @@
 		E17F2E6B1D115EF000E6EC42 /* WKTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = E17F2E661D115EF000E6EC42 /* WKTabBarController.m */; };
 		E17F2E6F1D115F6200E6EC42 /* UIImage+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = E17F2E6E1D115F6200E6EC42 /* UIImage+Extend.m */; };
 		E17F2E721D115F6700E6EC42 /* UIColor+FlatUI.m in Sources */ = {isa = PBXBuildFile; fileRef = E17F2E711D115F6700E6EC42 /* UIColor+FlatUI.m */; };
+		E1F31D911D1BC5C300030DE9 /* WKBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F31D8F1D1BC5C300030DE9 /* WKBookViewController.m */; };
+		E1F31D921D1BC5C300030DE9 /* WKBookViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1F31D901D1BC5C300030DE9 /* WKBookViewController.xib */; };
+		E1F31D9A1D1BC5EB00030DE9 /* WKRefreshViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F31D951D1BC5EB00030DE9 /* WKRefreshViewModel.m */; };
+		E1F31D9B1D1BC5EB00030DE9 /* WKView.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F31D971D1BC5EB00030DE9 /* WKView.m */; };
+		E1F31D9C1D1BC5EB00030DE9 /* WKViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F31D991D1BC5EB00030DE9 /* WKViewModel.m */; };
+		E1F31D9F1D1BC60900030DE9 /* WKBookViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F31D9E1D1BC60900030DE9 /* WKBookViewModel.m */; };
+		E1F31DA21D1BC64D00030DE9 /* WKBookView.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F31DA11D1BC64D00030DE9 /* WKBookView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,8 +70,6 @@
 		01282BF9B4DB3DAE592AD969 /* Pods-RACDouBanMovie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RACDouBanMovie.release.xcconfig"; path = "Pods/Target Support Files/Pods-RACDouBanMovie/Pods-RACDouBanMovie.release.xcconfig"; sourceTree = "<group>"; };
 		96E7C8A17707A5EFD36C0772 /* Pods-RACDouBanMovie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RACDouBanMovie.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RACDouBanMovie/Pods-RACDouBanMovie.debug.xcconfig"; sourceTree = "<group>"; };
 		9DDEFD7991BBEA4C96AC03E2 /* Pods_RACDouBanMovie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RACDouBanMovie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E17BABBA1D124681001C1B36 /* WKBookViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKBookViewModel.h; sourceTree = "<group>"; };
-		E17BABBB1D124681001C1B36 /* WKBookViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKBookViewModel.m; sourceTree = "<group>"; };
 		E17BABBD1D1246F6001C1B36 /* WKMyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WKMyViewController.h; path = RACDouBanMovie/Class/Me/VM/WKMyViewController.h; sourceTree = SOURCE_ROOT; };
 		E17BABBE1D1246F6001C1B36 /* WKMyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WKMyViewController.m; path = RACDouBanMovie/Class/Me/VM/WKMyViewController.m; sourceTree = SOURCE_ROOT; };
 		E17BABBF1D1246F6001C1B36 /* WKMyViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = WKMyViewController.xib; path = RACDouBanMovie/Class/Me/VM/WKMyViewController.xib; sourceTree = SOURCE_ROOT; };
@@ -80,9 +82,6 @@
 		E17BABCC1D1248AB001C1B36 /* MacroHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MacroHeader.h; sourceTree = "<group>"; };
 		E17BABCD1D128252001C1B36 /* Book.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Book.h; sourceTree = "<group>"; };
 		E17BABCE1D128252001C1B36 /* Book.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Book.m; sourceTree = "<group>"; };
-		E17BABD01D12934E001C1B36 /* WKBookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKBookViewController.h; sourceTree = "<group>"; };
-		E17BABD11D12934E001C1B36 /* WKBookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKBookViewController.m; sourceTree = "<group>"; };
-		E17BABD21D12934E001C1B36 /* WKBookViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WKBookViewController.xib; sourceTree = "<group>"; };
 		E17BABD51D12938C001C1B36 /* WKBookTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKBookTableViewCell.h; sourceTree = "<group>"; };
 		E17BABD61D12938C001C1B36 /* WKBookTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKBookTableViewCell.m; sourceTree = "<group>"; };
 		E17BABD71D12938C001C1B36 /* WKBookTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WKBookTableViewCell.xib; sourceTree = "<group>"; };
@@ -133,6 +132,19 @@
 		E17F2E6E1D115F6200E6EC42 /* UIImage+Extend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extend.m"; sourceTree = "<group>"; };
 		E17F2E701D115F6700E6EC42 /* UIColor+FlatUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+FlatUI.h"; sourceTree = "<group>"; };
 		E17F2E711D115F6700E6EC42 /* UIColor+FlatUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+FlatUI.m"; sourceTree = "<group>"; };
+		E1F31D8E1D1BC5C300030DE9 /* WKBookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKBookViewController.h; sourceTree = "<group>"; };
+		E1F31D8F1D1BC5C300030DE9 /* WKBookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKBookViewController.m; sourceTree = "<group>"; };
+		E1F31D901D1BC5C300030DE9 /* WKBookViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WKBookViewController.xib; sourceTree = "<group>"; };
+		E1F31D941D1BC5EB00030DE9 /* WKRefreshViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKRefreshViewModel.h; sourceTree = "<group>"; };
+		E1F31D951D1BC5EB00030DE9 /* WKRefreshViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKRefreshViewModel.m; sourceTree = "<group>"; };
+		E1F31D961D1BC5EB00030DE9 /* WKView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKView.h; sourceTree = "<group>"; };
+		E1F31D971D1BC5EB00030DE9 /* WKView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKView.m; sourceTree = "<group>"; };
+		E1F31D981D1BC5EB00030DE9 /* WKViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKViewModel.h; sourceTree = "<group>"; };
+		E1F31D991D1BC5EB00030DE9 /* WKViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKViewModel.m; sourceTree = "<group>"; };
+		E1F31D9D1D1BC60900030DE9 /* WKBookViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKBookViewModel.h; sourceTree = "<group>"; };
+		E1F31D9E1D1BC60900030DE9 /* WKBookViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKBookViewModel.m; sourceTree = "<group>"; };
+		E1F31DA01D1BC64D00030DE9 /* WKBookView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKBookView.h; sourceTree = "<group>"; };
+		E1F31DA11D1BC64D00030DE9 /* WKBookView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKBookView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,9 +204,9 @@
 		E17BABA51D1242DD001C1B36 /* Book */ = {
 			isa = PBXGroup;
 			children = (
-				E17BABD01D12934E001C1B36 /* WKBookViewController.h */,
-				E17BABD11D12934E001C1B36 /* WKBookViewController.m */,
-				E17BABD21D12934E001C1B36 /* WKBookViewController.xib */,
+				E1F31D8E1D1BC5C300030DE9 /* WKBookViewController.h */,
+				E1F31D8F1D1BC5C300030DE9 /* WKBookViewController.m */,
+				E1F31D901D1BC5C300030DE9 /* WKBookViewController.xib */,
 				E17BABA61D1242DD001C1B36 /* M */,
 				E17BABA71D1242DD001C1B36 /* V */,
 				E17BABA81D1242DD001C1B36 /* VM */,
@@ -219,6 +231,8 @@
 				E17BABD51D12938C001C1B36 /* WKBookTableViewCell.h */,
 				E17BABD61D12938C001C1B36 /* WKBookTableViewCell.m */,
 				E17BABD71D12938C001C1B36 /* WKBookTableViewCell.xib */,
+				E1F31DA01D1BC64D00030DE9 /* WKBookView.h */,
+				E1F31DA11D1BC64D00030DE9 /* WKBookView.m */,
 			);
 			path = V;
 			sourceTree = "<group>";
@@ -226,8 +240,8 @@
 		E17BABA81D1242DD001C1B36 /* VM */ = {
 			isa = PBXGroup;
 			children = (
-				E17BABBA1D124681001C1B36 /* WKBookViewModel.h */,
-				E17BABBB1D124681001C1B36 /* WKBookViewModel.m */,
+				E1F31D9D1D1BC60900030DE9 /* WKBookViewModel.h */,
+				E1F31D9E1D1BC60900030DE9 /* WKBookViewModel.m */,
 			);
 			path = VM;
 			sourceTree = "<group>";
@@ -371,6 +385,7 @@
 		E17F2E161D11555D00E6EC42 /* RACDouBanMovie */ = {
 			isa = PBXGroup;
 			children = (
+				E1F31D931D1BC5EB00030DE9 /* BaseClass */,
 				E17BAB9E1D1241C3001C1B36 /* Class */,
 				E17F2E6C1D115F5000E6EC42 /* Category */,
 				E17F2E5A1D115EF000E6EC42 /* Tabbar */,
@@ -477,6 +492,19 @@
 			);
 			name = Category;
 			path = category;
+			sourceTree = "<group>";
+		};
+		E1F31D931D1BC5EB00030DE9 /* BaseClass */ = {
+			isa = PBXGroup;
+			children = (
+				E1F31D941D1BC5EB00030DE9 /* WKRefreshViewModel.h */,
+				E1F31D951D1BC5EB00030DE9 /* WKRefreshViewModel.m */,
+				E1F31D961D1BC5EB00030DE9 /* WKView.h */,
+				E1F31D971D1BC5EB00030DE9 /* WKView.m */,
+				E1F31D981D1BC5EB00030DE9 /* WKViewModel.h */,
+				E1F31D991D1BC5EB00030DE9 /* WKViewModel.m */,
+			);
+			path = BaseClass;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -588,11 +616,11 @@
 				E17BABD91D12938C001C1B36 /* WKBookTableViewCell.xib in Resources */,
 				E17BABCB1D124728001C1B36 /* WKMusicViewController.xib in Resources */,
 				E17F2E271D11555D00E6EC42 /* LaunchScreen.storyboard in Resources */,
-				E17BABD41D12934E001C1B36 /* WKBookViewController.xib in Resources */,
 				E17F2E241D11555D00E6EC42 /* Assets.xcassets in Resources */,
 				E17BABF01D12B729001C1B36 /* MBProgressHUD.bundle in Resources */,
 				E17BABC61D12470F001C1B36 /* WKMoiveViewController.xib in Resources */,
 				E17BABC11D1246F6001C1B36 /* WKMyViewController.xib in Resources */,
+				E1F31D921D1BC5C300030DE9 /* WKBookViewController.xib in Resources */,
 				E17F2E221D11555D00E6EC42 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -669,25 +697,29 @@
 				E17BABCF1D128252001C1B36 /* Book.m in Sources */,
 				E17F2E6A1D115EF000E6EC42 /* WKNavigationController.m in Sources */,
 				E17BABF11D12B729001C1B36 /* MBProgressHUD.m in Sources */,
+				E1F31D9F1D1BC60900030DE9 /* WKBookViewModel.m in Sources */,
 				E17F2E691D115EF000E6EC42 /* WKTabBarView.m in Sources */,
 				E17F2E6F1D115F6200E6EC42 /* UIImage+Extend.m in Sources */,
 				E17F2E551D1155EC00E6EC42 /* WKNetwork+Request.m in Sources */,
+				E1F31D9B1D1BC5EB00030DE9 /* WKView.m in Sources */,
 				E17F2E1F1D11555D00E6EC42 /* ViewController.m in Sources */,
-				E17BABBC1D124681001C1B36 /* WKBookViewModel.m in Sources */,
 				E17F2E1C1D11555D00E6EC42 /* AppDelegate.m in Sources */,
+				E1F31D9C1D1BC5EB00030DE9 /* WKViewModel.m in Sources */,
 				E17BABC51D12470F001C1B36 /* WKMoiveViewController.m in Sources */,
 				E17F2E6B1D115EF000E6EC42 /* WKTabBarController.m in Sources */,
+				E1F31D9A1D1BC5EB00030DE9 /* WKRefreshViewModel.m in Sources */,
 				E17BABC01D1246F6001C1B36 /* WKMyViewController.m in Sources */,
 				E17F2E671D115EF000E6EC42 /* WKBadgeButton.m in Sources */,
 				E17BABCA1D124728001C1B36 /* WKMusicViewController.m in Sources */,
-				E17BABD31D12934E001C1B36 /* WKBookViewController.m in Sources */,
 				E17F2E681D115EF000E6EC42 /* WKTabBarButton.m in Sources */,
 				E17F2E561D1155EC00E6EC42 /* RACSignal+Parser.m in Sources */,
 				E17F2E721D115F6700E6EC42 /* UIColor+FlatUI.m in Sources */,
 				E17F2E541D1155EC00E6EC42 /* WKFormData.m in Sources */,
 				E17F2E531D1155EC00E6EC42 /* WKNetwork.m in Sources */,
 				E17F2E191D11555D00E6EC42 /* main.m in Sources */,
+				E1F31DA21D1BC64D00030DE9 /* WKBookView.m in Sources */,
 				E17F1CFD1D13D47D0011689C /* RMBook.m in Sources */,
+				E1F31D911D1BC5C300030DE9 /* WKBookViewController.m in Sources */,
 				E17BABD81D12938C001C1B36 /* WKBookTableViewCell.m in Sources */,
 				E17BABEF1D12B729001C1B36 /* MBProgressHUD+Extend.m in Sources */,
 			);
