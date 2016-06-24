@@ -47,6 +47,8 @@
 		E1F31D9C1D1BC5EB00030DE9 /* WKViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F31D991D1BC5EB00030DE9 /* WKViewModel.m */; };
 		E1F31D9F1D1BC60900030DE9 /* WKBookViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F31D9E1D1BC60900030DE9 /* WKBookViewModel.m */; };
 		E1F31DA21D1BC64D00030DE9 /* WKBookView.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F31DA11D1BC64D00030DE9 /* WKBookView.m */; };
+		E1F31DA51D1BE5F200030DE9 /* WKMyView.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F31DA41D1BE5F200030DE9 /* WKMyView.m */; };
+		E1F31DA81D1BE71400030DE9 /* WKMyViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F31DA71D1BE71400030DE9 /* WKMyViewModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -145,6 +147,10 @@
 		E1F31D9E1D1BC60900030DE9 /* WKBookViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKBookViewModel.m; sourceTree = "<group>"; };
 		E1F31DA01D1BC64D00030DE9 /* WKBookView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKBookView.h; sourceTree = "<group>"; };
 		E1F31DA11D1BC64D00030DE9 /* WKBookView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKBookView.m; sourceTree = "<group>"; };
+		E1F31DA31D1BE5F200030DE9 /* WKMyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKMyView.h; sourceTree = "<group>"; };
+		E1F31DA41D1BE5F200030DE9 /* WKMyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKMyView.m; sourceTree = "<group>"; };
+		E1F31DA61D1BE71400030DE9 /* WKMyViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WKMyViewModel.h; path = ../M/WKMyViewModel.h; sourceTree = "<group>"; };
+		E1F31DA71D1BE71400030DE9 /* WKMyViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WKMyViewModel.m; path = ../M/WKMyViewModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -269,6 +275,8 @@
 				E17BABBD1D1246F6001C1B36 /* WKMyViewController.h */,
 				E17BABBE1D1246F6001C1B36 /* WKMyViewController.m */,
 				E17BABBF1D1246F6001C1B36 /* WKMyViewController.xib */,
+				E1F31DA31D1BE5F200030DE9 /* WKMyView.h */,
+				E1F31DA41D1BE5F200030DE9 /* WKMyView.m */,
 			);
 			path = V;
 			sourceTree = "<group>";
@@ -276,6 +284,8 @@
 		E17BABAC1D1242DD001C1B36 /* VM */ = {
 			isa = PBXGroup;
 			children = (
+				E1F31DA61D1BE71400030DE9 /* WKMyViewModel.h */,
+				E1F31DA71D1BE71400030DE9 /* WKMyViewModel.m */,
 			);
 			path = VM;
 			sourceTree = "<group>";
@@ -718,7 +728,9 @@
 				E17F2E531D1155EC00E6EC42 /* WKNetwork.m in Sources */,
 				E17F2E191D11555D00E6EC42 /* main.m in Sources */,
 				E1F31DA21D1BC64D00030DE9 /* WKBookView.m in Sources */,
+				E1F31DA81D1BE71400030DE9 /* WKMyViewModel.m in Sources */,
 				E17F1CFD1D13D47D0011689C /* RMBook.m in Sources */,
+				E1F31DA51D1BE5F200030DE9 /* WKMyView.m in Sources */,
 				E1F31D911D1BC5C300030DE9 /* WKBookViewController.m in Sources */,
 				E17BABD81D12938C001C1B36 /* WKBookTableViewCell.m in Sources */,
 				E17BABEF1D12B729001C1B36 /* MBProgressHUD+Extend.m in Sources */,
